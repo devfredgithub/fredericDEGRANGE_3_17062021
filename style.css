@@ -1,0 +1,15 @@
+header
+{
+    height: 50px;
+}
+@media all and (max-width : 380px ) 
+{
+
+.imageSite
+{
+    margin: 0 auto;
+    width: 90%;
+    
+}
+    
+}
