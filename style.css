@@ -1,24 +1,69 @@
-.bloc
+
+body
 {
-    background-color:  #f7f7f7;
+	font-family: 'Roboto', sans-serif;
+	margin: inherit;
 }
 
-.bttn
+main
 {
-    background-color: #9356DC;
+	background-color:  #f7f7f7;
+	padding: 20px 50px;
+	text-align: center;
 }
-header
-{
-    height: 50px;
-}
-@media all and (max-width : 380px ) 
-{
 
 .imageSite
 {
-    margin: 0 auto;
-    width: 90%;
-    
+	text-align: center;
 }
-    
+
+h1
+{
+	font-size: 1.3em;
+}
+
+p
+{
+	color: #9CA6A6;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.bttnExplorer
+{
+    height: 30px;
+    color: white;
+    background: rgb(147,86,220);
+    background: linear-gradient(356deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 80%);
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow:0 2px 2px 0 gray ;
+}
+
+header
+{
+	height: 70px;
+}
+
+ol
+{
+    background-color: #9356DC;
+
+}
+
+
+@media all and (max-width : 380px )
+{
+	.imageSite
+	{
+		margin: 10px auto;
+		width: 70%;
+	}
+    .titre
+    {
+        padding: 20px 50px 20px 20px;
+    }
 }
