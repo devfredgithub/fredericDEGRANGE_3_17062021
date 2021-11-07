@@ -12,6 +12,7 @@ main
 	text-align: center;
 }
 
+/*tete de page*/
 .imageSite
 {
 	text-align: center;
@@ -40,7 +41,7 @@ a
     background: linear-gradient(356deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 80%);
     padding: 10px;
     border-radius: 30px;
-    box-shadow:0 2px 2px 0 gray ;
+    box-shadow:0 2px 2px 0 #9CA6A6 ;
 }
 
 header
@@ -48,13 +49,43 @@ header
 	height: 70px;
 }
 
-ol
-{
-    background-color: #9356DC;
+/* fonctionnement*/
 
+.numero
+{
+    width: 20px;
+    background-color:#9356DC;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 3px;
+}
+.bttnF
+{
+    display: flex;
+    padding: 20px;
+    background-color:#f7f7f7 ;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 2px 1px  #9CA6A6;
+}
+i
+{
+    width: 20px;
+    height: 20px;
+    color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
+
+
+
+
+
+
+/*smarphone*/
 @media all and (max-width : 380px )
 {
 	.imageSite
