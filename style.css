@@ -50,6 +50,10 @@ header
 }
 
 /* fonctionnement*/
+section
+{
+    padding-bottom: 20px;
+}
 
 .numero
 {
@@ -78,6 +82,20 @@ i
     margin-right: 10px;
 }
 
+.restaurants
+{
+	background-color:  #f7f7f7;
+	height: 800px;
+}
+
+.vignettes
+{
+    height: 100px;
+    background-color:white ;
+    margin: 15px 20px;
+    border-radius: 15px;
+    box-shadow:0 2px 2px 0 #9CA6A6 ;
+}
 
 
 
