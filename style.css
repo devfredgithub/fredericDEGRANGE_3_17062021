@@ -66,7 +66,6 @@ input
 }
 
 /* fonctionnement*/
-
 section
 {
 	padding-bottom: 20px;
@@ -110,17 +109,17 @@ i
 }
 
 .nouveau
-{width: 80px;
-    height: 30px;
-    color: #1b6150;
-    background-color:#99E2D0;
-    position: absolute;
-
+{
+	width: 80px;
+	height: 30px;
+	color: #1b6150;
+	background-color:#99E2D0;
+	position: absolute;
 }
 
 .fa-heart
 {
-    background-color: linear-gradient(356deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 80%);
+	background-color: linear-gradient(356deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 80%);
 }
 
 .infoResto
@@ -129,7 +128,7 @@ i
 	height: 50px;
 	justify-content: space-around;
 	padding-top: 20px;
-    color: initial;
+	color: initial;
 }
 
 img
@@ -152,39 +151,36 @@ img
 	font-weight: bold;
 }
 
-
 /*footer*/
 footer
 {
-    height: 180px;
-    background-color:#353535 ;
-    color: #f7f7f7;
-    padding: 15px ;
-    
-
+	height: 180px;
+	background-color:#353535 ;
+	color: #f7f7f7;
+	padding: 15px ;
 }
 
 .pied
 {
-    font-family: 'Shrikhand', cursive;
-    padding-bottom: 15px;
+	font-family: 'Shrikhand', cursive;
+	padding-bottom: 15px;
 }
 
 .fa-utensils
 {
-    color: #f7f7f7;
+	color: #f7f7f7;
 }
 
 .fa-hands-helping
 {
-    color: #f7f7f7; ;
+	color: #f7f7f7;
+	;
 }
+
 .contact
 {
-    text-decoration: initial;
+	text-decoration: initial;
 }
-
-
 
 /*smarphone*/
 @media all and (max-width : 380px )
@@ -206,7 +202,7 @@ footer
 		display: block;
 		width: 100%;
 		height: 150px;
-        position: relative;
+		position: relative;
 	}
 
 	.vignettes
@@ -217,15 +213,13 @@ footer
 		margin: 15px 20px;
 		border-radius: 15px;
 		box-shadow:0 2px 2px 0 #9CA6A6 ;
-        
 	}
 
-    a:hover.vignettes
-    {
-        background-color:#99E2D0;
-        mask-image: inherit;
-        box-shadow: 2px 5px 5px 3px  #9CA6A6;;
-    }
-
-
+	a:hover.vignettes
+	{
+		background-color:#99E2D0;
+		mask-image: inherit;
+		box-shadow: 2px 5px 5px 3px  #9CA6A6;
+		;
+	}
 }
