@@ -1,27 +1,36 @@
 
+/*font-family: 'Roboto Slab', serif;
+font-family: 'Shrikhand', cursive;
+*/
 body
 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Slab', serif;
 	margin: inherit;
 }
 
 main
 {
+	font-family: 'Roboto Slab', serif;
 	background-color:  #f7f7f7;
 	padding: 20px 50px;
 	text-align: center;
 }
 
 /*tete de page*/
-.imageSite img
-{height: 50px;
-    width: 60%;
+.titre
+{
+	height: 60px;
+	width: 100%;
 	text-align: center;
+	font-family: 'Shrikhand', cursive;
+	font-size: 30px;
 }
 
 h1
 {
+	font-family: 'Roboto Slab', serif;
 	font-size: 1.3em;
+	padding-left: 20px;
 }
 
 p
@@ -31,18 +40,18 @@ p
 
 a
 {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .bttnExplorer
 {
-    height: 30px;
-    color: white;
-    background: rgb(147,86,220);
-    background: linear-gradient(356deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 80%);
-    padding: 10px;
-    border-radius: 30px;
-    box-shadow:0 2px 2px 0 #9CA6A6 ;
+	height: 30px;
+	color: white;
+	background: rgb(147,86,220);
+	background: linear-gradient(356deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 80%);
+	padding: 10px;
+	border-radius: 30px;
+	box-shadow:0 2px 2px 0 #9CA6A6 ;
 }
 
 header
@@ -50,64 +59,130 @@ header
 	height: 70px;
 }
 
+input
+{
+	border: none;
+	background-color:#f7f7f7;
+}
+
 /* fonctionnement*/
+
 section
 {
-    padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 .numero
 {
-    width: 20px;
-    background-color:#9356DC;
-    color: white;
-    border-radius: 15px;
-    text-align: center;
-    padding: 3px;
-    position: relative;
-    right: 30px;
+	width: 20px;
+	background-color:#9356DC;
+	color: white;
+	border-radius: 15px;
+	text-align: center;
+	padding: 3px;
+	position: relative;
+	right: 30px;
 }
+
 .bttnF
 {
-    display: flex;
-    padding: 20px;
-    background-color:#f7f7f7 ;
-    border-radius: 10px;
-    margin: 10px;
-    box-shadow: 0 2px 2px 1px  #9CA6A6;
+	display: flex;
+	padding: 20px;
+	background-color:#f7f7f7 ;
+	border-radius: 10px;
+	margin: 20px 25px;
+	box-shadow: 0 2px 2px 1px  #9CA6A6;
 }
+
 i
 {
-    width: 20px;
-    height: 20px;
-    color: gray;
-    margin-left: 10px;
-    margin-right: 10px;
+	width: 20px;
+	height: 20px;
+	color: gray;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .restaurants
 {
 	background-color:  #f7f7f7;
-	height: 500px;
+	height: 1050px;
+}
+
+.nouveau
+{width: 80px;
+    height: 30px;
+    color: #1b6150;
+    background-color:#99E2D0;
+    position: absolute;
+
+}
+
+.fa-heart
+{
+    background-color: linear-gradient(356deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 80%);
 }
 
 .infoResto
-{display: flex;
-    height: 50px;
-    justify-content: space-around;
+{
+	display: flex;
+	height: 50px;
+	justify-content: space-around;
+	padding-top: 20px;
+    color: initial;
 }
 
 img
-{width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
+{
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 15px 15px 0 0;
+}
 
+.noms
+{
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.lieu
+{
+	font-size: 0.9em;
+	font-weight: bold;
 }
 
 
+/*footer*/
+footer
+{
+    height: 180px;
+    background-color:#353535 ;
+    color: #f7f7f7;
+    padding: 15px ;
+    
 
+}
 
+.pied
+{
+    font-family: 'Shrikhand', cursive;
+    padding-bottom: 15px;
+}
+
+.fa-utensils
+{
+    color: #f7f7f7;
+}
+
+.fa-hands-helping
+{
+    color: #f7f7f7; ;
+}
+.contact
+{
+    text-decoration: initial;
+}
 
 
 
@@ -116,29 +191,41 @@ img
 {
 	.imageSite
 	{
-	
 		width: 100%;
-        object-fit:initial;
-        text-align: center;
+		object-fit:initial;
+		text-align: center;
 	}
-    .titre
+
+	.titre
+	{
+		padding-top: 20px;
+	}
+
+	.photos
+	{
+		display: block;
+		width: 100%;
+		height: 150px;
+        position: relative;
+	}
+
+	.vignettes
+	{
+		width: 90%;
+		height: 230px;
+		background-color:white ;
+		margin: 15px 20px;
+		border-radius: 15px;
+		box-shadow:0 2px 2px 0 #9CA6A6 ;
+        
+	}
+
+    a:hover.vignettes
     {
-        padding: 20px 50px 20px 20px;
+        background-color:#99E2D0;
+        mask-image: inherit;
+        box-shadow: 2px 5px 5px 3px  #9CA6A6;;
     }
 
-    .photos
-{display: block;
-    width: 100%;
-    height: 150px;
-}
 
-.vignettes
-{width: 90%;
-    height: 200px;
-    background-color:white ;
-    margin: 15px 20px;
-
-    border-radius: 15px;
-    box-shadow:0 2px 2px 0 #9CA6A6 ;
-}
 }

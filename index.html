@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto+Slab?query=roboto&preview.text=D%C3%A9couvrez&preview.text_type=custom#standard-styles">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Shrikhand&display=swap" rel="stylesheet">
 		<link  rel ="stylesheet " href =" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css " >
 		<link rel="stylesheet" href="style.css">
 		<meta charset="UTF-8">
@@ -11,8 +13,8 @@
 	</head>
 	<body>
 		<header>
-			<div class="imageSite">
-				<img src="ohmyfood/Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo"class="imageSite">
+			<div class="titre">
+				Ohmyfood
 			</div>
 		</header>
 		<main>
@@ -29,7 +31,7 @@
 			</div>
 		</main>
 		<section>
-			<div class="titre">
+			<div class="sousTitre">
 				<h1>Fonctionnement</h1>
 			</div>
 			<div class="bttnF">
@@ -61,61 +63,94 @@
 			</div>
 		</section>
 		<section>
-            <div class="restaurants">
-            <div class="titre">
-                <h1>restaurants</h1>
-            </div>
-            <div class="vignettes">
-                <div class="photos"><img src="ohmyfood/Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/1.jpg" alt="restaurant la palette du gôut"></div>
-                <div class="infoResto">
-					<div class="info">
-					<div class="noms">La palette du goût</div>
-                <div class="lieu">Ménilmontant</div>
-			</div>
-                <i class="far fa-heart"></i>
-			</div>
-            </div>
-            <div class="vignettes">
-                <div class="photos"><img src="ohmyfood/Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/2.jpg" alt="restaurant la note enchantée"></div>
-               <div class="infoResto">
-				<div class="info">
-				<div class="noms">La note enchantée</div>
-                <div class="lieu">Charonne</div>
+			<div class="restaurants">
+				<div class="sousTitre">
+					<h1>Restaurants</h1>
 				</div>
-                <i class="far fa-heart"></i>
-			   </div>
-            </div>
-            <div class="vignettes">
-                <div class="photos"><img src="ohmyfood/Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/3.jpg" alt="restaurant à la française"></div>
-                <div class="infoResto">
-					<div class="info">
-					<div class="noms">Â la française</div>
-                <div class="lieu">Cité Rouge</div>
-			</div>
-                <i class="far fa-heart"></i>
+				<a href="laPaletteDuGout.html">
+					<div class="vignettes">
+						<div class="photos">
+							<div class="nouveau">Nouveau</div>
+							<img src="ohmyfood/Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/1.jpg" alt="restaurant la palette du gôut">
+						</div>
+						<div class="infoResto">
+							<div class="info">
+								<div class="noms">
+									La palette du goût
+								</div>
+								<div class="lieu">
+									Ménilmontant
+								</div>
+							</div>
+							<i class="far fa-heart"></i>
+						</div>
+					</a>
 				</div>
-            </div>
-            <div class="vignettes">
-                <div class="photos"><img src="ohmyfood/Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/4.jpg" alt="restaurant le délice des sens"></div>
-                <div class="infoResto">
-					<div class="info">
-					<div class="noms">Le délice des sens</div>
-                <div class="lieu">Folie-Méricourt</div>
-			</div>
-                <i class="far fa-heart"></i>
+				<a href="laNoteEnchantee.html">
+					<div class="vignettes">
+						<div class="photos">
+							<div class="nouveau">Nouveau</div>
+							<img src="ohmyfood/Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/2.jpg" alt="restaurant la note enchantée">
+						</div>
+						<div class="infoResto">
+							<div class="info">
+								<div class="noms">
+									La note enchantée
+								</div>
+								<div class="lieu">
+									Charonne
+								</div>
+							</div>
+							<i class="far fa-heart"></i>
+						</div>
+					</a>
 				</div>
-            </div>
-
-            </div>
-        </section>
+				<a href="aLaFrancaise.html">
+					<div class="vignettes">
+						<div class="photos">
+							<img src="ohmyfood/Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/3.jpg" alt="restaurant à la française">
+						</div>
+						<div class="infoResto">
+							<div class="info">
+								<div class="noms">
+									Â la française
+								</div>
+								<div class="lieu">
+									Cité Rouge
+								</div>
+							</div>
+							<i class="far fa-heart"></i>
+						</div>
+					</a>
+				</div>
+				<a href="leDeliceDesSens.html">
+					<div class="vignettes">
+						<div class="photos">
+							<img src="ohmyfood/Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/4.jpg" alt="restaurant le délice des sens">
+						</div>
+						<div class="infoResto">
+							<div class="info">
+								<div class="noms">
+									le delice des sens
+								</div>
+								<div class="lieu">
+									Folie-Méricourt
+								</div>
+							</div>
+							<i class="far fa-heart"></i>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
 		<footer>
-            <div>
-                <div class=""></div>
-                <div class=""></div>
-                <div class=""></div>
-                <div class=""></div>
-
-            </div>
-        </footer>
+			<div class="pied">ohmyfood</div>
+			<div>
+				<div class="#"><i class="fas fa-utensils"></i>Proposer un restaurant</div>
+				<div class="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</div>
+				<div class="#">Mentions légales</div>
+				<div class="contact"><a href="ohmyfood@gmail.com">Contact</a></div>
+			</div>
+		</footer>
 	</body>
 </html>
