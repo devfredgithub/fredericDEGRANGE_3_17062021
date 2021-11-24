@@ -158,12 +158,12 @@ i
 }
 
 .fa-heart
-{
+{position: absolute;
 	background-color: linear-gradient(356deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 80%);
 }
 
 .fa-heart:hover
- {
+ {position: relative;
 	 color: #9356DC;
 
  }
