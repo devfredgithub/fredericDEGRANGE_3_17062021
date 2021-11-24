@@ -216,19 +216,29 @@ footer
 	text-decoration: initial;
 }
 
-@media all and (min-width:990px)
-{
-	.multiBttn
-	{
-		flex-direction: row;
-	}
-}
-
 /*menu*/
 .nomSiteMenu
 {
 	display: flex;
 	align-items: baseline;
+}
+
+.contenuMenu
+{
+	padding: 20px;
+	background-color:  #f7f7f7;
+}
+
+.plat
+{font-weight: bold;
+	font-size: 1.27em;
+
+}
+
+.description
+{
+	font-size: 1.2em;
+
 }
 
 .carteImg
@@ -248,6 +258,13 @@ footer
 	align-items: baseline;
 }
 
+.prix
+{font-weight: bold;
+	display: flex;
+align-items: flex-end;
+
+}
+
 h2
 {
 	font-size: 0.8em;
@@ -255,19 +272,24 @@ h2
 
 .vignette
 {
-	width: 90%;
+	width: 95%;
 	background-color:white ;
 	margin: 15px 20px;
 	border-radius: 15px;
 	box-shadow:0 2px 2px 0 #9CA6A6 ;
 	display: flex;
+	padding: 3px;
 }
 
 figcaption
-{
+{width: 80%;
 }
 
-/*mediaqueries*/
-@media all and (max-width : 380px )
+
+@media all and (min-width:990px)
 {
+	.multiBttn
+	{
+		flex-direction: row;
+	}
 }
