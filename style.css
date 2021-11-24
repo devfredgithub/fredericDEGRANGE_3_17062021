@@ -100,6 +100,11 @@ section
 	box-shadow: 0 2px 2px 1px  #9CA6A6;
 }
 
+.bttnF i:hover
+{
+	color: #9356DC;
+}
+
 .multiBttn
 {
 	display: flex;
@@ -156,6 +161,12 @@ i
 {
 	background-color: linear-gradient(356deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 80%);
 }
+
+.fa-heart:hover
+ {
+	 color: #9356DC;
+
+ }
 
 .infoResto
 {
