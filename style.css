@@ -33,15 +33,19 @@ main
 }
 
 .boiteRech
-{display: block;
+{
+	display: block;
 	background-color:#e0e0e0;
 	width: 100%;
 	height: 50px;
+	padding-top: 5px;
+	box-shadow: 0px 0px 5px blue;
 }
 
-.recherche
+input.recherche
 {
 	color: #757575;
+	background-color: inherit;
 }
 
 h1
@@ -151,8 +155,6 @@ i
 {
 	display: block;
 	width: 100%;
-
-	
 }
 
 .nouveau
@@ -174,15 +176,16 @@ i
 }
 
 .fa-heart-Vide
-{position: absolute;
+{
+	position: absolute;
+	color: lightcoral;
 	background-color: linear-gradient(356deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 80%);
 }
 
-.fa-heart-Plein :hover
- {
-	 color: #9356DC;
-
- }
+.fa-heart-Plein:hover
+{
+	background-color: linear-gradient(356deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 80%);
+}
 
 .infoResto
 {
@@ -241,7 +244,7 @@ footer
 
 .contact
 {
-	text-decoration: initial;
+	color: white;
 }
 
 /*menu*/
@@ -260,15 +263,14 @@ footer
 }
 
 .plat
-{font-weight: bold;
+{
+	font-weight: bold;
 	font-size: 1.27em;
-
 }
 
 .description
 {
 	font-size: 1.2em;
-
 }
 
 .carteImg
@@ -290,10 +292,10 @@ footer
 }
 
 .prix
-{font-weight: bold;
+{
+	font-weight: bold;
 	display: flex;
-align-items: flex-end;
-
+	align-items: flex-end;
 }
 
 h2
@@ -302,7 +304,8 @@ h2
 }
 
 h3
-{margin-bottom: 0;
+{
+	margin-bottom: 0;
 }
 
 .souligne
@@ -321,19 +324,17 @@ h3
 	box-shadow:0 2px 2px 0 #9CA6A6 ;
 	display: flex;
 	padding: 10px;
-	
 }
 
 figcaption
-{width: 80%;
+{
+	width: 80%;
 }
 
 .zoneCommande
 {
 	text-align: center;
-
 }
-
 
 @media all and (min-width:990px)
 {
@@ -341,13 +342,13 @@ figcaption
 	{
 		flex-direction: row;
 	}
+
 	.vignettes
 	{
-		width: 40%;
+		width: 45%;
 	}
 
 	/*menus*/
-
 	.vignette
 	{
 		width: 60%;
@@ -355,7 +356,35 @@ figcaption
 	}
 
 	.contenuMenu
-	{padding-left: 20%;
-	
+	{
+		padding: 0 auto;
+	}
+
+	.lotResto
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.toutMenu
+	{
+		display: flex;
+	}
+
+	.sousMenu
+	{
+		background: white;
+		margin-right: 10px;
+	}
+
+	.vignette
+	{
+		box-shadow: inherit;
+	}
+
+	.zoneCommande
+	{
+		padding-top: 40px;
+		height: 60px;
 	}
 }
