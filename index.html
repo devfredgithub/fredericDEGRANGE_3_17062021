@@ -3,7 +3,9 @@
 	<head>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Shrikhand&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
 		<link  rel ="stylesheet " href =" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css " >
 		<link rel="stylesheet" href="style.css">
 		<meta charset="UTF-8">
@@ -15,11 +17,14 @@
 		<header>
 			<h1><div class="titre">Ohmyfood</div></h1>
 		</header>
-		<main>
+		<div class="boiteRech">
 			<form action="post">
 				<i class="fas fa-map-marker-alt"></i>
-				<input type ="recherche" aria-placeholder="Paris,Belleville" class="#">
+				<input type ="recherche" aria-placeholder="Paris,Belleville" class="recherche">Paris,Belleville
 			</form>
+		</div>
+		<main>
+			
 			<div class="bloc">
 				<h1>Réservez le menu qui vous convient</h1>
 				<p>
@@ -70,9 +75,7 @@
 				<a href="laPaletteDuGout.html">
 					<div class="vignettes">
 						<div class="photos">
-							<div class="nouveau">
-								Nouveau
-							</div>
+							
 							<img src="ohmyfood/Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/1.jpg" alt="restaurant la palette du gôut" class="carteImg">
 						</div>
 						<div class="infoResto">
@@ -84,18 +87,20 @@
 									Ménilmontant
 								</div>
 							</div>
+							<div class="nouveau">
+								Nouveau
+							</div>
 							<div class="coeur">
-							<i class="far fa-heart"></i><i class="fas fa-heart"></i>
-						</div>
+								<i class="far fa-heart Vide"></i>
+								<i class="fas fa-heart Plein"></i>
+							</div>
 						</div>
 					</a>
 				</div>
 				<a href="laNoteEnchantee.html">
 					<div class="vignettes">
 						<div class="photos">
-							<div class="nouveau">
-								Nouveau
-							</div>
+							
 							<img src="ohmyfood/Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/2.jpg" alt="restaurant la note enchantée" class="carteImg">
 						</div>
 						<div class="infoResto">
@@ -107,7 +112,13 @@
 									Charonne
 								</div>
 							</div>
-							<i class="far fa-heart"></i>
+							<div class="nouveau">
+								Nouveau
+							</div>
+							<div class="coeur">
+								<i class="far fa-heart Vide"></i>
+								<i class="fas fa-heart Plein"></i>
+							</div>
 						</div>
 					</a>
 				</div>
@@ -125,7 +136,10 @@
 									Cité Rouge
 								</div>
 							</div>
-							<i class="far fa-heart"></i>
+							<div class="coeur">
+								<i class="far fa-heart Vide"></i>
+								<i class="fas fa-heart Plein"></i>
+							</div>
 						</div>
 					</a>
 				</div>
@@ -143,7 +157,10 @@
 									Folie-Méricourt
 								</div>
 							</div>
-							<i class="far fa-heart"></i>
+							<div class="coeur">
+								<i class="far fa-heart Vide"></i>
+								<i class="fas fa-heart Plein"></i>
+							</div>
 						</div>
 					</a>
 				</div>

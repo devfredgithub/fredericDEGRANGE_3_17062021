@@ -4,13 +4,12 @@ font-family: 'Shrikhand', cursive;
 */
 body
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto', serif;
 	margin: inherit;
 }
 
 main
 {
-	font-family: 'Roboto Slab', serif;
 	background-color:  #f7f7f7;
 	padding: 20px 50px;
 	text-align: center;
@@ -33,9 +32,20 @@ main
 	font-size: 30px;
 }
 
+.boiteRech
+{display: block;
+	background-color:#e0e0e0;
+	width: 100%;
+	height: 50px;
+}
+
+.recherche
+{
+	color: #757575;
+}
+
 h1
 {
-	font-family: 'Roboto Slab', serif;
 	font-size: 1.3em;
 	padding-left: 20px;
 }
@@ -134,14 +144,15 @@ i
 	margin: 15px 20px;
 	border-radius: 15px;
 	box-shadow:0 2px 2px 0 #9CA6A6 ;
+	position: relative;
 }
 
 .photos
 {
 	display: block;
 	width: 100%;
-	height: 150px;
-	position: relative;
+
+	
 }
 
 .nouveau
@@ -151,19 +162,24 @@ i
 	color: #1b6150;
 	background-color:#99E2D0;
 	position: absolute;
-	left: 250px;
+	left: 70%;
 	top: 15px;
 	text-align: center;
-	padding-top: 3px;
+	padding-top: 6px;
 }
 
-.fa-heart
+.coeur
+{
+	position: relative;
+}
+
+.fa-heart-Vide
 {position: absolute;
 	background-color: linear-gradient(356deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 80%);
 }
 
-.fa-heart:hover
- {position: relative;
+.fa-heart-Plein :hover
+ {
 	 color: #9356DC;
 
  }
@@ -173,15 +189,16 @@ i
 	display: flex;
 	height: 50px;
 	justify-content: space-around;
-	padding-top: 20px;
+	padding-top: 35px;
 	color: initial;
 }
 
 img
 {
 	width: 100%;
-	height: 200px;
+	height: 250px;
 	object-fit: cover;
+	margin-bottom: -25px;
 }
 
 .noms
@@ -237,7 +254,9 @@ footer
 .contenuMenu
 {
 	padding: 20px;
-	background-color:  #f7f7f7;
+	background-color:#eceff1;
+	border-radius:15px 15px 0 0;
+	position: relative;
 }
 
 .plat
@@ -267,6 +286,7 @@ footer
 	font-size: 30px;
 	display: flex;
 	align-items: baseline;
+	justify-content: space-between;
 }
 
 .prix
@@ -281,19 +301,37 @@ h2
 	font-size: 0.8em;
 }
 
+h3
+{margin-bottom: 0;
+}
+
+.souligne
+{
+	background-color: #99E2D0;
+	width: 50px;
+	height: 4px;
+}
+
 .vignette
 {
 	width: 95%;
 	background-color:white ;
-	margin: 15px 20px;
+	margin: 15px 0 20px 0;
 	border-radius: 15px;
 	box-shadow:0 2px 2px 0 #9CA6A6 ;
 	display: flex;
-	padding: 3px;
+	padding: 10px;
+	
 }
 
 figcaption
 {width: 80%;
+}
+
+.zoneCommande
+{
+	text-align: center;
+
 }
 
 
@@ -302,5 +340,22 @@ figcaption
 	.multiBttn
 	{
 		flex-direction: row;
+	}
+	.vignettes
+	{
+		width: 40%;
+	}
+
+	/*menus*/
+
+	.vignette
+	{
+		width: 60%;
+		text-align: center;
+	}
+
+	.contenuMenu
+	{padding-left: 20%;
+	
 	}
 }
