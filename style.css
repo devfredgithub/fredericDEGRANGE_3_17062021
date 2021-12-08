@@ -187,26 +187,36 @@ i
 .coeurVide
 {
 	color:violet;
+	font-size: 15px;
 }
 
 .coeurPlein
 {position: absolute;
 	color: transparent;
-	
+	font-size: 8px;
+	transition: transform 3s;
+
 }
 
 .coeurPlein:hover
 {
-	transition: background-color 300ms;
 	background-image: linear-gradient(#9356DC, #FF79DA);
 	-webkit-background-clip: text;
+	transform: scale(1.4);
 	
 }
 
-.fa-heart
+@keyframes coeurPlein
 {
-	font-size: 15px;
+	0%{
+		transform: scale(0);
+	}
+	100%{
+	transform: scale(1.3);
 }
+}
+
+
 
 .infoResto
 {
@@ -345,22 +355,38 @@ h3
 	border-radius: 15px;
 	box-shadow:0 2px 2px 0 #9CA6A6 ;
 	display: flex;
-	padding: 10px;
-
-	
+	padding: 10px 0 10px 10px;
 }
 
+.vignette:hover
+{
+
+}
+
+.fa-check-circle
+{width: 30px;
+	background:#99E2D0 ;
+	color: white;
+	height: auto;
+	text-align: center;
+}
+
+.
 
 
 .coeurPleinMenu
+{
+color: transparent;
+left: 15px;
+}
 
+.coeurPleinMenu:hover
 {position: absolute;
 	color: transparent;
 	top: 19px;
 	background-image: linear-gradient(#9356DC, #FF79DA);
 	-webkit-background-clip: text;
-
-
+	font-size: initial;
 }
 
 figcaption
