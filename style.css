@@ -193,6 +193,7 @@ i
 	padding-top: 6px;
 }
 
+/*animationFavori*/
 .coeur
 {
 	position: relative;
@@ -203,17 +204,6 @@ i
 {
 	color:violet;
 	transition-duration: 1s;
-
-}
-
-.coeur:hover .coeurPlein
-{
-	transform: scale(1);
-}
-
-.coeur:hover .coeurVide
-{
-transform: scale(0);
 }
 
 .coeurPlein
@@ -226,6 +216,17 @@ transform: scale(0);
 	transform: scale(0);
 	transition-duration: 1s;
 }
+
+.coeur:hover .coeurVide
+{
+transform: scale(0);
+}
+
+.coeur:hover .coeurPlein
+{
+	transform: scale(1);
+}
+/****/
 
 .infoResto
 {
@@ -305,6 +306,7 @@ footer
 
 .plat
 {
+	padding-top: 10px;
 	font-weight: bold;
 	font-size: 1.27em;
 }
@@ -312,6 +314,7 @@ footer
 .description
 {
 	font-size: 1.2em;
+	padding-bottom: 10px;
 }
 
 .carteImg
@@ -336,7 +339,7 @@ footer
 {
 	font-weight: bold;
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 }
 
 h2
@@ -364,20 +367,45 @@ h3
 	border-radius: 15px;
 	box-shadow:0 2px 2px 0 #9CA6A6 ;
 	display: flex;
-	padding: 10px 0 10px 10px;
+	padding: 0 0 0 10px;
 }
 
-.vignette:hover
+/*animationMenu*/
+.checkPlat
 {
+	width: 20%;
+	display: flex;
+	margin-right: 0;
+}
 
+.checkPlat:hover .fa-check-circle
+{
+	transition-duration: 1s ;
+	transform: translateY(0%);
+	opacity: 1;
+	height: 100%;
+	margin-right: 0;
+	
 }
 
 .fa-check-circle
-{width: 30px;
+{
+	width: 100%;
+	border-radius: 0 15px 15px 0;
+	margin-right: 0;
 	background:#99E2D0 ;
 	color: white;
 	height: auto;
 	text-align: center;
+	opacity: 0;
+	transform: translate(30%);
+	transition-duration: 1s;
+}
+
+.fa-check-circle:hover
+{
+	transform: scale(1);
+	transition-duration: 1s;
 }
 
 
@@ -395,6 +423,7 @@ left: 15px;
 	-webkit-background-clip: text;
 	font-size: initial;
 }
+/****/
 
 figcaption
 {
