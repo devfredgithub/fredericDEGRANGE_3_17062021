@@ -2,17 +2,36 @@
 /*font-family: 'Roboto Slab', serif;
 font-family: 'Shrikhand', cursive;
 */
+@keyframes loader
+{
+	0%, 100%
+	{
+		opacity: 1;
+	}
+}
+
+@keyframes spin
+{
+}
+
+.loader
+{
+	background:#9356DC;
+	/*  opacity: 0;
+	*/
+	transition-duration: 3s;
+}
+
 body
 {
 	font-family: 'Roboto', serif;
 	margin: 0 auto;
-
 }
+
 .max
-{max-width: 1280px;
+{
+	max-width: 1280px;
 	margin: 0 auto;
-
-
 }
 
 main
@@ -123,12 +142,11 @@ section
 	box-shadow: 0 2px 2px 1px  #9CA6A6;
 }
 
-.bttnF:hover 
+.bttnF:hover
 {
 	background:#F5ECFF;
-	color: #9356DC; 
+	color: #9356DC;
 	transition-duration: 500ms;
-
 }
 
 .bttnF:hover i
@@ -208,7 +226,7 @@ i
 
 .coeurPlein
 {
-		position: absolute;
+	position: absolute;
 	background-image: linear-gradient(#9356DC, #FF79DA);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -219,15 +237,15 @@ i
 
 .coeur:hover .coeurVide
 {
-transform: scale(0);
+	transform: scale(0);
 }
 
 .coeur:hover .coeurPlein
 {
 	transform: scale(1);
 }
-/****/
 
+/****/
 .infoResto
 {
 	display: flex;
@@ -368,6 +386,12 @@ h3
 	box-shadow:0 2px 2px 0 #9CA6A6 ;
 	display: flex;
 	padding: 0 0 0 10px;
+	transform: scale(0);
+	animation-fill-mode: both;
+	animation-direction: normal;
+	animation-duration: 0.6s;
+	animation-play-state: running;
+	animation-iteration-count: 1;
 }
 
 /*animationMenu*/
@@ -385,7 +409,6 @@ h3
 	opacity: 1;
 	height: 100%;
 	margin-right: 0;
-	
 }
 
 .fa-check-circle
@@ -408,23 +431,23 @@ h3
 	transition-duration: 1s;
 }
 
-
 .coeurPleinMenu
 {
-color: transparent;
-left: 15px;
+	color: transparent;
+	left: 15px;
 }
 
 .coeurPleinMenu:hover
-{position: absolute;
+{
+	position: absolute;
 	color: transparent;
 	top: 19px;
 	background-image: linear-gradient(#9356DC, #FF79DA);
 	-webkit-background-clip: text;
 	font-size: initial;
 }
-/****/
 
+/****/
 figcaption
 {
 	width: 80%;
@@ -464,14 +487,12 @@ figcaption
 	{
 		display: flex;
 		flex-wrap: wrap;
-		justify-content:center
-	}
+	justify-content:center}
 
 	.toutMenu
 	{
 		display: flex;
-		justify-content: space-around
-	}
+	justify-content: space-around}
 
 	.sousMenu
 	{
@@ -489,5 +510,4 @@ figcaption
 		padding-top: 40px;
 		height: 60px;
 	}
-	
 }
