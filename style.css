@@ -1,26 +1,6 @@
-
 /*font-family: 'Roboto Slab', serif;
 font-family: 'Shrikhand', cursive;
 */
-@keyframes loader
-{
-	0%, 100%
-	{
-		opacity: 1;
-	}
-}
-
-@keyframes spin
-{
-}
-
-.loader
-{
-	background:#9356DC;
-	/*  opacity: 0;
-	*/
-	transition-duration: 3s;
-}
 
 body
 {
@@ -463,16 +443,17 @@ figcaption
 }
 
 @media all and (min-width:990px)
+
 {
 	.multiBttn
 	{
 		flex-direction: row;
 		justify-content: center;
 	}
-
-	.vignettes
+	
+	footer
 	{
-		width: 45%;
+		padding-left: 5%;
 	}
 
 	/*menus*/
