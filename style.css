@@ -358,6 +358,7 @@ footer
 	font-weight: bold;
 	display: flex;
 	align-items: center;
+	width: 50px;
 }
 
 h2
@@ -386,7 +387,7 @@ h3
 	box-shadow:0 2px 2px 0 #9CA6A6 ;
 	display: flex;
 	padding: 0 0 0 10px;
-	transform: scale(0);
+	/*transform: scale(0);*/
 	animation-fill-mode: both;
 	animation-direction: normal;
 	animation-duration: 0.6s;
@@ -451,6 +452,9 @@ h3
 figcaption
 {
 	width: 80%;
+	white-space:nowrap ;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .zoneCommande
@@ -496,13 +500,16 @@ figcaption
 
 	.sousMenu
 	{
+		width: 30%;
 		background: white;
 		margin-right: 10px;
 	}
 
 	.vignette
 	{
-		box-shadow: inherit;
+		width: auto;
+		border: solid 1px;
+
 	}
 
 	.zoneCommande
