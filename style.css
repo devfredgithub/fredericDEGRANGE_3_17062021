@@ -367,12 +367,6 @@ h3
 	box-shadow:0 2px 2px 0 #9CA6A6 ;
 	display: flex;
 	padding: 0 0 0 10px;
-	/*transform: scale(0);*/
-	animation-fill-mode: both;
-	animation-direction: normal;
-	animation-duration: 0.6s;
-	animation-play-state: running;
-	animation-iteration-count: 1;
 }
 
 /*animationMenu*/
