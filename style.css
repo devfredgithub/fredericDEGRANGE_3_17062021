@@ -388,9 +388,11 @@ h3
 
 .fa-check-circle
 {
+	display: flex;
+	align-items: center;
 	width: 100%;
+	padding-left: 20%;
 	border-radius: 0 15px 15px 0;
-	margin-right: 0;
 	background:#99E2D0 ;
 	color: white;
 	height: auto;
