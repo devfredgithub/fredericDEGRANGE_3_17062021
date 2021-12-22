@@ -1,6 +1,32 @@
+
 /*font-family: 'Roboto Slab', serif;
 font-family: 'Shrikhand', cursive;
 */
+.loader
+{
+	width: 100%;
+	height: 100%;
+	background: #9356DC;
+	animation: pageLoad 3000ms;
+	position:relative;
+}
+
+@keyframes pageLoad
+{
+	0%
+	{
+		-webkit-transform: scale(0);
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	100%
+	{
+		-webkit-transform:scale(1) ;
+		transform: scale(1);
+		opacity: 1;
+	}
+}
 
 body
 {
@@ -338,7 +364,7 @@ footer
 	font-weight: bold;
 	display: flex;
 	align-items: center;
-	width: 50px;
+	width: 100px;
 }
 
 h2
@@ -384,6 +410,12 @@ h3
 	opacity: 1;
 	height: 100%;
 	margin-right: 0;
+}
+
+.checkPlat:hover .prix
+{
+	transition-duration: 1.8s;
+	transform: translatex(-50%);
 }
 
 .fa-check-circle
@@ -439,14 +471,13 @@ figcaption
 }
 
 @media all and (min-width:990px)
-
 {
 	.multiBttn
 	{
 		flex-direction: row;
 		justify-content: center;
 	}
-	
+
 	footer
 	{
 		padding-left: 5%;
@@ -473,7 +504,24 @@ figcaption
 	.toutMenu
 	{
 		display: flex;
-	justify-content: space-around}
+		justify-content: space-around;
+		animation: AMenus 1000ms ease-in-out;
+	}
+
+	@keyframes AMenus
+	{
+		0%
+		{
+			-webkit-transform: scaleX(-10%);
+			transform: scaleX(-10%);
+		}
+
+		100%
+		{
+			-webkit-transform: scaleX(1);
+			transform: scaleX(1);
+		}
+	}
 
 	.sousMenu
 	{
@@ -486,7 +534,6 @@ figcaption
 	{
 		width: auto;
 		border: solid 1px;
-
 	}
 
 	.zoneCommande
