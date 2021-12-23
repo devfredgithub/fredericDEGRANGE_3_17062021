@@ -2,6 +2,67 @@
 /*font-family: 'Roboto Slab', serif;
 font-family: 'Shrikhand', cursive;
 */
+.loadercontainer
+{
+	height: 100%;
+	z-index: -4;
+
+}
+
+.loaderspinner
+{
+	font-size: 30px;
+	width: 200px;
+	height: 200px;
+	background-image :linear-gradient(172deg, #FF79DA 7%, #99E2D0 51%, #9356DC 75% );
+line-height: 200px;
+border-radius: 50%;
+text-align: center;
+font-weight: bold;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+animation: disparition 3000ms;
+opacity: 0;
+z-index:-4;
+
+}
+
+.bloc-content
+{opacity:1;
+	animation: apparition 3000ms;
+
+}
+
+@keyframes apparition {
+	0%{
+		opacity: 0;
+	}
+	90%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes disparition {
+	0%{opacity: 1;
+
+	}
+	90%{opacity: 1;
+
+	}
+	100%{opacity: 0;
+
+	}
+}
+
+
+/*
 .loader
 {
 	width: 100%;
@@ -27,6 +88,7 @@ font-family: 'Shrikhand', cursive;
 		opacity: 1;
 	}
 }
+*/
 
 body
 {
@@ -470,7 +532,7 @@ figcaption
 	text-align: center;
 }
 
-@media all and (min-width:990px)
+@media screen and (min-width:990px)
 {
 	.multiBttn
 	{
