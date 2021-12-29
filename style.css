@@ -529,6 +529,7 @@ h3
 
 i.fa-check-circle:hover
 {
+	animation-delay: 0.8s;
 	transform: rotate(190deg);
 	animation-duration: 1.3s;
 }
