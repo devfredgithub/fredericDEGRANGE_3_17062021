@@ -396,6 +396,30 @@ footer
 	position: relative;
 }
 
+.toutMenu
+{
+	animation: AMenus 1000ms ease-in-out;
+}
+
+@keyframes AMenus
+	{
+		0%
+		{
+			-webkit-transform: scaleX(-50%);
+			transform: scaleX(-50%);
+			-webkit-transform: scaleY(-50%);
+			transform: scaleY(-50%);
+		}
+
+		100%
+		{
+			-webkit-transform: scaleX(1);
+			transform: scaleX(1);
+			-webkit-transform: scaleY(1);
+			transform: scaleY(1);
+		}
+	}
+
 .plat
 {
 	padding-top: 10px;
@@ -500,7 +524,21 @@ h3
 	opacity: 0;
 	transform: translate(30%);
 	transition-duration: 1s;
+
 }
+
+i.fa-check-circle:hover
+{
+	transform: rotate(190deg);
+	animation-duration: 1.3s;
+}
+
+/*
+i.far.fa-check-circle
+{
+	transform: rotate(190deg);
+	transition-duration: 1s;
+}*/
 
 .fa-check-circle:hover
 {
@@ -573,23 +611,10 @@ figcaption
 	{
 		display: flex;
 		justify-content: space-around;
-		animation: AMenus 1000ms ease-in-out;
+		
 	}
 
-	@keyframes AMenus
-	{
-		0%
-		{
-			-webkit-transform: scaleX(-10%);
-			transform: scaleX(-10%);
-		}
-
-		100%
-		{
-			-webkit-transform: scaleX(1);
-			transform: scaleX(1);
-		}
-	}
+	
 
 	.sousMenu
 	{
