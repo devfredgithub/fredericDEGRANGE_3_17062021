@@ -411,6 +411,11 @@ footer
 
 /*menu*/
 
+.photo
+{
+	height: 280px;
+}
+
 
 .nomSiteMenu
 {
@@ -467,7 +472,6 @@ width: 130px;
 .slide .fa-check-circle{
     margin: auto;
     color: white;
-
     font-size: xx-large;
     font-weight: bold;
     -webkit-transition: -webkit-transform 1s;
@@ -476,7 +480,6 @@ width: 130px;
     transition: transform 1s, -webkit-transform 1s;
     -webkit-transform: rotate(-1turn);
             transform: rotate(-1turn);
-
 }
 
 .contenu_menu:hover > .slide {
@@ -487,9 +490,6 @@ width: 130px;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
-
-
-
 
 
 /* Apparition du menu */
@@ -646,66 +646,34 @@ h3
 	padding: 0 0 0 10px;
 }
 
-/*animationMenu*/
-/*
-.checkPlat
-{
-	width: 20%;
-	display: flex;
-	margin-right: 0;
-}
-
-.checkPlat:hover .fa-check-circle
-{
-	transition-duration: 1s ;
-	transform: translateY(0%);
-	opacity: 1;
-	height: 100%;
-	margin-right: 0;
-}
-
-.checkPlat:hover .prix
-{
-	transition-duration: 1.8s;
-	transform: translatex(-50%);
-}
-*/
 .fa-check-circle
 {
 	display: flex;
 	align-items: center;
 	width: 100%;
 	padding-left: 20%;
-	border-radius: 0 15px 15px 0;
+	border-radius:15px 15px 0 0;
 	background:#99E2D0 ;
 	color: white;
 	height: auto;
 	text-align: center;
+
+
 	opacity: 0;
 	transform: translate(30%);
 	transition-duration: 1s;
-}
-
-i.fa-check-circle:hover
-{
 	animation-delay: 0.8s;
 	transform: rotate(190deg);
 	animation-duration: 1.3s;
 }
 
-/*i.far.fa-check-circle
-{
-	transform: rotate(190deg);
-	transition-duration: 1s;
-}
-
-*/
-.fa-check-circle:hover
+.fa-check-circle
 {
 	transform: scale(1);
 	transition-duration: 1s;
+	opacity: 1;
 }
-
+*/
 .coeurPleinMenu
 {
 	color: transparent;
@@ -754,12 +722,12 @@ i.fa-check-circle:hover
 	width: 300px;
 	
 }
-
+/*
 	.contenuMenu
 	{
 		padding: 0 auto;
 	}
-
+*/
 	.lotResto
 	{
 		display: flex;
