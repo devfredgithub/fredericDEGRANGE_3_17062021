@@ -405,10 +405,6 @@ footer
 }
 
 /*menu*/
-.photo
-{
-	height: 280px;
-}
 
 .nomSiteMenu
 {
@@ -416,7 +412,7 @@ footer
 	align-items: baseline;
 }
 
-*******.contenu_menu
+.contenu_menu
 {
 	display: flex;
 	background-color: white;
@@ -549,7 +545,7 @@ footer
 
 }
 
-********.contenuMenu
+.contenuMenu
 {
 	padding: 20px;
 	background-color:#eceff1;
