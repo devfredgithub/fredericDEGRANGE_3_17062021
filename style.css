@@ -1,14 +1,11 @@
 
-/*font-family: 'Roboto Slab', serif;
+/*font-family: 'Roboto', serif;
 font-family: 'Shrikhand', cursive;
 */
 .loadercontainer
 {
 	height: 100%;
-	
 }
-
-
 
 @keyframes animationLoader
 {
@@ -18,15 +15,12 @@ font-family: 'Shrikhand', cursive;
 		transform: rotate(0deg);
 	}
 
-	
-
 	100%
 	{
 		opacity: 1;
 		transform: rotate(360deg);
 	}
 }
-
 
 .loaderspinner
 {
@@ -126,6 +120,7 @@ main
 	text-align: center;
 	font-family: 'Shrikhand', cursive;
 	font-size: 30px;
+	padding-left: 30%;
 }
 
 .boiteRech
@@ -140,6 +135,14 @@ main
 	box-shadow: inset 0px 7px 3px -4px #707070;
 }
 
+.sousTitreReserve
+{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Roboto', serif;
+}
+
 input.recherche
 {
 	color: #757575;
@@ -148,7 +151,10 @@ input.recherche
 
 h1
 {
-	font-size: 1.3em;
+	height: 60px;
+	text-align: center;
+	font-family: 'Shrikhand', cursive;
+	font-size: 30px;
 	padding-left: 20px;
 }
 
@@ -238,6 +244,15 @@ section
 	color: #9356DC;
 }
 
+.sousTitreF
+{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Roboto', serif;
+
+}
+
 .multiBttn
 {
 	display: flex;
@@ -257,6 +272,14 @@ i
 {
 	background-color:  #f7f7f7;
 	height: auto;
+}
+
+.sousTitreR
+{
+	font-family: 'Roboto', serif;
+	padding-left: 10%;
+	font-size: 30px;
+	font-weight: bold;
 }
 
 .vignettes
@@ -386,8 +409,6 @@ footer
 }
 
 /*menu*/
-
-
 .nomSiteMenu
 {
 	display: flex;
@@ -510,7 +531,6 @@ footer
 	{
 		opacity: 1;
 	}
-
 }
 
 @keyframes plat_1
@@ -524,7 +544,6 @@ footer
 	{
 		opacity: 1;
 	}
-
 }
 
 .contenuMenu
